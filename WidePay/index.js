@@ -56,7 +56,6 @@ class WidePay {
                                 'error': 'Não foi possível tratar o retorno.',
                             };
                         }
-                        console.log('this.requisicoes', this.requisicoes )
                         this.requisicoes.push(requisicao);
                         resolve(this.requisicoes.pop());
                     });
