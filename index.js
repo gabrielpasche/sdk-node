@@ -15,16 +15,15 @@ const widePay = new WidePay('200267', '00b1aa0f124b6ea635081fc01c8228cf');
 widePay.api('/recebimentos/cobrancas/adicionar', options)
     .then(response =>{
         console.log('WP Response', response)
-        res.status(200).json({message: response});
     }).catch(error=>{
-    console.log('WP Response error', error)
-    res.status(200).json({message: error});
-})
+        console.log('WP Response error', error)
+    })
 
 // OU usando [await]
 
 try {
     const response = await widePay.api('/recebimentos/cobrancas/adicionar', options)
+    console.log('WP Response', response)
 } catch (e) {
     console.log(e)
 }
