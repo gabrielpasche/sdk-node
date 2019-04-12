@@ -31,7 +31,7 @@ class WidePay {
                 const data = JSON.stringify(parametros);
                 const urlPath = url.resolve('/v1/', local);
                 const options = {
-                    hostname: 'api.widepay.com/9',
+                    hostname: 'api.widepay.com',
                     port: 443,
                     path: `/v1${urlPath}`,
                     method: 'POST',
