@@ -22,11 +22,10 @@ class WidePay {
                 requisicao = {
                     'success': false,
                     'error': 'É necessário informar a carteira e o token para efetuar a autenticação.'
-                }
+                };
 
                 this.requisicoes.push(requisicao)
-                return this.requisicoes.pop();
-
+                resolve(this.requisicoes.pop());
             } else {
                 const data = JSON.stringify(parametros);
                 const urlPath = url.resolve('/v1/', local);
