@@ -12,7 +12,7 @@ const options = {
         {descricao: 'Descrição item 1', valor: 22.55}
     ]
 };
-const widePay = new WidePay();
+const widePay = new WidePay('192392','182j3981j230j1092j30129j');
 const response = await widePay.api('/recebimentos/cobrancas/adicionar', options)
 console.log('WP Response', response);
 ```
